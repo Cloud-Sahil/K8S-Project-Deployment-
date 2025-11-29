@@ -43,3 +43,13 @@
 . Create Database
 
 ## 3. EC2 (Elastic Compute Cloud)
+
+. Launch instance
+
+. Instance type -- EX. (c7i.xlarge)
+
+. Security groups -- EX. (launch-wizard-1)
+
+. Storage -- EX. (20GB)
+
+. Launch instance
