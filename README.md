@@ -286,3 +286,5 @@ kubectl get pods
 ```sh
 kubectl get svc
 ```
+## 11. Frontend
+
