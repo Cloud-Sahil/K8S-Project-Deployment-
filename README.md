@@ -233,3 +233,56 @@ docker login -u (docker hub id)
 docker push (dockerhub id)/backend:v1
 ```
 ##### Ex. docker push sahil0117/backend:v1
+
+#### Write Backend Pod Yamlfile
+```sh
+nano backend-pod.yaml
+```
+```sh
+apiVersion: v1
+kind: Pod
+metadata:
+  name: backend-pod
+  labels:
+    app: backend
+spec:
+  containers:
+    - name: backend
+      image: sahil0117/backend:v1
+      ports:
+        - containerPort: 8080
+```
+#### Apply backend-pod yamlfile
+```sh
+kubectl apply -f backend-pod.yaml
+```
+#### Write Backend Service Yamlfile
+```sh
+nano backend-svc.yaml
+```
+```sh
+apiVersion: v1
+kind: Service
+metadata:
+  name: backend-svc
+spec:
+  type: LoadBalancer
+  selector:
+    app: backend
+  ports:
+    - protocol: TCP
+      port: 8080
+      targetPort: 8080
+```
+#### Apply backend-svc yamlfile
+```sh
+kubectl apply -f backend-svc.yaml
+```
+#### Check Pods
+```sh
+kubectl get pods
+```
+#### Check Svc
+```sh
+kubectl get svc
+```
