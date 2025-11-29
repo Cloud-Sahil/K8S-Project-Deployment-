@@ -164,3 +164,47 @@ show databases;
 ```sh
 exit;
 ```
+
+### 10. Clone the GitHub Repository
+```sh
+git clone <GitHub_Repository_Link>
+```
+##### Example: git clone https://github.com/username/student-registration.git
+
+### 11. Backend
+
+```sh
+cd <GitHub_Repository_Name>/backend
+
+```
+```sh
+cp src/main/resources/application.properties .
+```
+#### Write application.properties =
+```sh
+nano application.properties
+```
+```sh
+    server.port=8080
+    spring.datasource.url=jdbc:mariadb://(database endpoint paste):3306/student_db 
+    spring.datasource.username=(database username)
+    spring.datasource.password=(database password)
+    spring.jpa.hibernate.ddl-auto=update
+    spring.jpa.show-sql=true
+# Then ctrl s+x
+```
+#### Write Backend Dockerfile =
+```sh
+nano dockerfile
+```
+```sh
+    FROM maven:3.8.3-openjdk-17
+    COPY . /opt
+    WORKDIR /opt
+    RUN rm -rf src/main/resources/application.properties
+    RUN cp -rf application.properties src/main/resources
+    RUN mvn clean package
+    WORKDIR /opt/target
+    EXPOSE 8080
+    CMD ["java","-jar","student-registration-backend-0.0.1-SNAPSHOT.jar"]
+```
