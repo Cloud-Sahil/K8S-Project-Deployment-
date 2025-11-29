@@ -124,3 +124,43 @@ sudo ./aws/install
 aws eks update-kubeconfig --name (**EKS Cluster Name**)
 ```
 Ex. aws eks update-kubeconfig --name cluster
+
+### 9. Mysql-client Database 
+```sh
+mysql -h (endpoint) -u (username) -p
+```
+```sh
+Enter password (password)
+```
+##### RDS Database Endpoint copy & paste
+##### Example: mysql -h database-1.ca9eie2mihs7.us-east-1.rds.amazonaws.com -u admin -p
+##### Example: redhat123
+
+```sh
+CREATE DATABASE student_db;
+```
+```sh
+GRANT ALL PRIVILEGES ON springbackend.* TO 'username'@'localhost' IDENTIFIED BY 'password';
+```
+```sh
+USE student_db;
+```
+```sh
+CREATE TABLE `students` (
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
+  `name` varchar(255) DEFAULT NULL,
+  `email` varchar(255) DEFAULT NULL,
+  `course` varchar(255) DEFAULT NULL,
+  `student_class` varchar(255) DEFAULT NULL,
+  `percentage` double DEFAULT NULL,
+  `branch` varchar(255) DEFAULT NULL,
+  `mobile_number` varchar(255) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=80 DEFAULT CHARSET=latin1 COLLATE=latin1_swedish_ci;
+```
+```sh
+show databases;
+```
+```sh
+exit;
+```
