@@ -42,4 +42,4 @@
 
 . Create Database
 
-
+## 3. EC2 (Elastic Compute Cloud)
