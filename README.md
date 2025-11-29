@@ -34,11 +34,11 @@
 
 . Templates -- Sandbox
 
-. Master username -- (linux)
+. Master username -- EX. (linux)
 
-. Master password --  (redhat123)
+. Master password --  EX. (redhat123)
 
-. VPC security group -- (launch-wizard-1)
+. VPC security group -- EX. (launch-wizard-1)
 
 . Create Database
 
