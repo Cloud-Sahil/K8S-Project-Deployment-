@@ -208,3 +208,28 @@ nano dockerfile
     EXPOSE 8080
     CMD ["java","-jar","student-registration-backend-0.0.1-SNAPSHOT.jar"]
 ```
+#### Docker Build
+```sh
+docker build . -t backend:v1
+```
+#### Docker Tag (DockerHub)
+```sh
+docker tag backend:v1 (docker hub id)/backend:v1
+```
+##### Ex. docker tag backend:v1 sahil0117/backend:v1
+
+#### Docker images check
+```sh
+docker images
+```
+#### Docker Login
+```sh
+docker login -u (docker hub id)
+```
+##### Ex. docker login -u sahil0117
+
+#### docker push
+```sh
+docker push (dockerhub id)/backend:v1
+```
+##### Ex. docker push sahil0117/backend:v1
