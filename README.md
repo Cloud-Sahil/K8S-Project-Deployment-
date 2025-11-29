@@ -7,3 +7,17 @@
 . Security Group
 
 . Create EKS Cluster
+
+. Cluster Select
+
+. Compute
+
+. Add Node
+
+. Create IAM Role
+
+. Add Policy (AmazonEKSWorkerNodeMinimalPolicy)
+
+. Add EC2 Instance Type
+
+. Create
