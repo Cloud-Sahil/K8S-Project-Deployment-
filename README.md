@@ -118,3 +118,9 @@ sudo ./aws/install
 ### 7. Configure AWS CLI
 #### Access key ID
 #### Secret access key 
+
+### 8. Log In Into EKS cluster
+```sh
+aws eks update-kubeconfig --name (**EKS Cluster Name**)
+```
+Ex. aws eks update-kubeconfig --name cluster
