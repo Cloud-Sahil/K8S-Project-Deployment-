@@ -142,7 +142,7 @@ mysql -h (endpoint) -u (username) -p
 Enter password (password)
 ```
 ##### RDS Database Endpoint copy & paste
-##### Example: mysql -h database-1.ca9eie2mihs7.us-east-1.rds.amazonaws.com -u admin -p
+##### Example: mysql -h database-1.ca9eie2mihs7.us-east-1.rds.amazonaws.com -u linux -p
 ##### Example: redhat123
 
 ```sh
