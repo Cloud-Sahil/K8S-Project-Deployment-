@@ -1,4 +1,6 @@
-# Kuberneties Project -
+# Kuberneties StudentsApp Project -
+
+---
 
 ## 1. EKS Cluster (Elastic Kubernetes Service)
 
@@ -44,6 +46,8 @@
 
 . Create Database
 
+---
+
 ## 3. EC2 (Elastic Compute Cloud)
 
 . Launch instance
@@ -55,6 +59,9 @@
 . Storage -- EX. (20GB)
 
 . Launch instance
+
+---
+
 
 ## 4. Commands =
 
