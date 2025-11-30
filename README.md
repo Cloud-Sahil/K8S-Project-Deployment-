@@ -296,4 +296,10 @@ kubectl get pods
 kubectl get svc
 ```
 ## 11. Frontend
-
+```sh
+cd ../frontend/
+```
+#### Write env file
+```sh
+nano .env
+```
