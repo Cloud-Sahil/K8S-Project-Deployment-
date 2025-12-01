@@ -307,3 +307,12 @@ cd ../frontend/
 ```sh
 nano .env
 ```
+```sh
+VITE_API_URL = "http://(backend-svc = LoadBalancer = IP Paste):8080/api"
+```
+##### Ex. VITE_API_URL = "http://aa597014bd33d4ef1a2d43710fac6fc3-1747006653.us-east-1.elb.amazonaws.com:8080/api"
+
+#### Write Frontend Dockerfile =
+```sh
+nano dockerfile
+```
