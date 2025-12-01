@@ -332,3 +332,29 @@ nano dockerfile
 ```sh
 docker build . -t frontend:v1
 ```
+#### Write Frontend Deploy yamlfile
+```sh
+nano frontend-deploy.yaml
+```
+```sh
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: frontend-deploy
+spec: 
+  replicas: 3
+  selector:
+    matchLabels:
+      app: frontend
+  template:
+    metadata:
+      name: frontend
+      labels:
+        app: frontend
+    spec:
+      containers:
+        - name: frontend
+          image: sahil0117/frontend:v1
+          ports:
+            - containerPort: 80
+```
