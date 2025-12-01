@@ -125,6 +125,10 @@ sudo ./aws/install
 ```
 
 ### 7. Configure AWS CLI
+```sh
+aws configure
+```
+
 #### Access key ID
 #### Secret access key 
 
