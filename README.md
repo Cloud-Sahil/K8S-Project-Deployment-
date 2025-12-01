@@ -316,3 +316,15 @@ VITE_API_URL = "http://(backend-svc = LoadBalancer = IP Paste):8080/api"
 ```sh
 nano dockerfile
 ```
+```sh
+    FROM node:25-alpine3.21
+    COPY . /opt
+    WORKDIR /opt
+    RUN apk update 
+    RUN apk add apache2
+    RUN npm install
+    RUN npm run build
+    RUN cp -rf dist/* /var/www/localhost/htdocs/
+    EXPOSE 80
+    CMD ["httpd","-D","FOREGROUND"]
+```
