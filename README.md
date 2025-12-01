@@ -328,3 +328,7 @@ nano dockerfile
     EXPOSE 80
     CMD ["httpd","-D","FOREGROUND"]
 ```
+#### Docker Build
+```sh
+docker build . -t frontend:v1
+```
