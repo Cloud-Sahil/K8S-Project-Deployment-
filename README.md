@@ -358,3 +358,11 @@ spec:
           ports:
             - containerPort: 80
 ```
+#### Apply Frontend Deploy yamlfile
+```sh
+kubectl apply -f frontend-deploy.yaml
+```
+#### Check Pods
+```sh
+kubectl get pods
+```
