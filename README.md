@@ -77,7 +77,7 @@ apt update
 ```
 ### 3. Docker install 
 ```sh
-apt install docker.io 
+apt install docker.io -y
 ```
 ### 4. Mysql install 
 ```sh
