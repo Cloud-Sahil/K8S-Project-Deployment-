@@ -366,3 +366,29 @@ kubectl apply -f frontend-deploy.yaml
 ```sh
 kubectl get pods
 ```
+#### Write Frontend Service Yamlfile
+```sh
+nano frontend-svc.yaml
+```
+```sh
+apiVersion: v1
+kind: Service
+metadata:
+  name: frontend-svc
+spec:
+  type: LoadBalancer
+  selector:
+    app: frontend
+  ports:
+    - protocol: TCP
+      port: 80
+      targetPort: 80
+```
+#### Apply frontend-svc yamlfile
+```sh
+kubectl apply -f frontend-svc.yaml
+```
+#### Check Svc
+```sh
+kubectl get svc
+```
