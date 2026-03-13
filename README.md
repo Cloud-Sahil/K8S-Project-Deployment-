@@ -203,14 +203,15 @@ cp src/main/resources/application.properties .
 nano application.properties
 ```
 ```sh
-    server.port=8080
-    spring.datasource.url=jdbc:mariadb://(database endpoint paste):3306/student_db 
-    spring.datasource.username=(database username)
-    spring.datasource.password=(database password)
-    spring.jpa.hibernate.ddl-auto=update
-    spring.jpa.show-sql=true
-# Then ctrl s+x
+server.port=8080
+spring.datasource.url=jdbc:mariadb://(database endpoint paste):3306/student_db 
+spring.datasource.username=(database username)
+spring.datasource.password=(database password)
+spring.jpa.hibernate.ddl-auto=update
+spring.jpa.show-sql=true
+
 ```
+#### Then ctrl s+x
 #### Write Backend Dockerfile =
 ```sh
 nano dockerfile
