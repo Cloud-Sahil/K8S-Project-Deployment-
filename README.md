@@ -160,6 +160,7 @@ CREATE DATABASE student_db;
 ```sh
 GRANT ALL PRIVILEGES ON springbackend.* TO 'username'@'localhost' IDENTIFIED BY 'password';
 ```
+##### Example: GRANT ALL PRIVILEGES ON springbackend.* TO 'linux'@'localhost' IDENTIFIED BY 'redhat123';
 ```sh
 USE student_db;
 ```
